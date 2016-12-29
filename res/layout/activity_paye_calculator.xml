@@ -27,75 +27,76 @@
                 android:id="@+id/toolbar_1"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/cardview_dark_background"
+                android:background="@color/colorPrimary"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:layout_collapseMode="none"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-            </android.support.v7.widget.Toolbar>
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar_2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/cardview_dark_background"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:layout_collapseMode="none"
             app:elevation="0dp"
+            app:layout_collapseMode="none"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:paddingLeft="32dp"
+                android:paddingRight="16dp"
                 android:paddingTop="16dp"
-                android:paddingBottom="56dp"
-                android:paddingRight="16dp">
+                android:weightSum="1">
 
                 <android.support.design.widget.TextInputLayout
-                    android:id="@+id/lNameLayout"
+                    android:textColorHint="@color/abc_secondary_text_material_light"
+                    android:id="@+id/grossWrapper"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/fNameLayout"
-                    android:layout_marginTop="10dp">
+                    android:layout_height="wrap_content">
 
-                    <EditText
-                        android:id="@+id/ltitle"
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edtGross"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Title" />
+                        android:hint="Gross Salary"
+                        android:theme="@style/Theme.App.Base" />
+
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
-                    android:id="@+id/lNameLayout2"
+                    android:textColorHint="@color/abc_secondary_text_material_light"
+                    android:id="@+id/personalReliefWrapper"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/fNameLayout"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp">
+                    android:layout_below="@id/grossWrapper">
 
-                    <EditText
-                        android:id="@+id/ldesc"
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edtRelief"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Description"/>
+                        android:hint="Personal Relief"
+                        android:layout_marginTop="20dp"
+                        android:theme="@style/Theme.App.Base" />
+
                 </android.support.design.widget.TextInputLayout>
+
 
 
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
 
 
-
-</android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_paye_calculator" />
 

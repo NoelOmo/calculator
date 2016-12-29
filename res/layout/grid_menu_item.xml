@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="165dp"
         android:layout_gravity="center"
-        android:background="@color/cardColor"
-        android:clickable="false"
+        android:background="?attr/selectableItemBackground"
+        android:drawSelectorOnTop="true"
         android:foreground="?android:attr/selectableItemBackground"
         card_view:cardCornerRadius="2dp">
 
