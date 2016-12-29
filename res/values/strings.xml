@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculator ke</string>
+    <string name="menu_item_one">KRA Income Tax Calculator</string>
+    <string name="menu_item_two">Mortgage Calculator</string>
+    <string name="menu_item_three">Menu Item Three</string>
+    <string name="menu_item_four">Menu Item Four</string>
+    <string name="menu_item_five">Menu Item Five</string>
+    <string name="menu_item_six">Menu Item Six</string>
+    <string name="title_activity_paye_calculator">PayeCalculator</string>
+    <string name="action_settings">Settings</string>
+</resources>
