@@ -2,6 +2,8 @@ package com.noel.calculatorke;
 
 import android.content.Intent;
 import android.os.Build;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,8 +12,11 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.noel.calculatorke.Adapters.MainPageAdapter;
+
+import java.io.Console;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,12 +27,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         setupTransparentStatusBar();
         setupMenuItems();
-
-
-
 
     }
 
@@ -56,13 +57,9 @@ public class MainActivity extends AppCompatActivity {
 
                 switch(position) {
                     case 0:
-                        Intent i = new Intent(getApplicationContext(), PayeActivity.class);
-                        startActivity(i);
+                        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new PayeFragment()).commit();
                         break;
                 }
-
-
-
 
             }
         });
