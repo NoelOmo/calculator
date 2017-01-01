@@ -67,44 +67,54 @@
                 android:layout_weight="1">
 
                 <Button
-                    style="@style/TaxPercentageButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="10%"
                     android:id="@+id/button"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:background="@android:color/white"
+                    android:textSize="20sp" />
 
                 <Button
-                    style="@style/TaxPercentageButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="15%"
-                    android:id="@+id/button2"
-                    android:layout_weight="1" />
+                    android:id="@+id/btn_15_percent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:background="@android:color/white"
+                    android:textSize="20sp" />
 
                 <Button
-                    style="@style/TaxPercentageButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="20%"
                     android:id="@+id/button3"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:background="@android:color/white"
+                    android:textSize="20sp" />
 
                 <Button
-                    style="@style/TaxPercentageButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="25%"
                     android:id="@+id/button4"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:background="@android:color/white"
+                    android:textSize="20sp" />
 
                 <Button
-                    style="@style/TaxPercentageButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="30%"
                     android:id="@+id/button5"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:background="@android:color/white"
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -140,8 +150,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="300000 - 400000"
-                        android:id="@+id/textView2"
+                        android:text="non"
+                        android:id="@+id/tax_bracket"
                         android:paddingTop="20dp"
                         android:textColor="#FFFFFF"
                         android:layout_gravity="center_horizontal"
@@ -316,11 +326,11 @@
 
                     <Button
                         style="@style/ButtonNumberPad"
-                        android:id="@+id/btn_decimal"
+                        android:id="@+id/btn_clear"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="."
+                        android:text="C"
                         />
 
                     <Button

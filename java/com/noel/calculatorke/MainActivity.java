@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
                 switch(position) {
                     case 0:
-                        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new PayeFragment()).commit();
+                        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new PayeFragment()).addToBackStack(null).commit();
                         break;
                 }
 
@@ -82,5 +82,14 @@ public class MainActivity extends AppCompatActivity {
             window.setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));
         }
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(getSupportFragmentManager().getBackStackEntryCount() == 0){
+            this.finish();
+        }else{
+            getSupportFragmentManager().popBackStack();
+        }
     }
 }
