@@ -18,16 +18,17 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
-    <style name="Theme.App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorControlNormal">#123</item>
-        <item name="colorControlActivated">#123</item>
-        <item name="colorControlHighlight">#123</item>
+    <style name="ButtonNumberPad" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_margin">0.5dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">28sp</item>
     </style>
 
-    <style name="ButtonNumberPad" parent="Widget.AppCompat.Button">
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:background">@color/colorPrimaryDark</item>
-        <item name="android:textSize">28sp</item>
+    <style name="TaxPercentageButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="ButtonOperation" parent="Widget.AppCompat.Button">

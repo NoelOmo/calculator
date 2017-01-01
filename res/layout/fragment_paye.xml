@@ -16,46 +16,96 @@
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="6"
-            android:paddingLeft="32dp"
-            android:paddingRight="32dp"
-            android:paddingTop="16dp"
-            android:orientation="vertical"
-            android:background="#ecedf1">
+            android:orientation="vertical">
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/grossWrapper"
+
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/abc_secondary_text_material_light">
+                android:layout_height="0dp"
+                android:layout_weight="2">
 
-                <android.support.v7.widget.AppCompatEditText
-                    android:id="@+id/edtGross"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Gross Salary"
-                    android:theme="@style/Theme.App.Base" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#353535">
 
-            </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="GROSS SALARY"
+                        android:id="@+id/textView5"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#FFFFFF" />
+                </RelativeLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/personalReliefWrapper"
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:background="#434343">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="0"
+                        android:id="@+id/textView6"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/grossWrapper"
-                android:textColorHint="@color/abc_secondary_text_material_light">
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
+                <Button
+                    style="@style/TaxPercentageButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="10%"
+                    android:id="@+id/button"
+                    android:layout_weight="1" />
 
-                <android.support.v7.widget.AppCompatEditText
-                    android:id="@+id/edtRelief"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Personal Relief"
-                    android:theme="@style/Theme.App.Base" />
+                <Button
+                    style="@style/TaxPercentageButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="15%"
+                    android:id="@+id/button2"
+                    android:layout_weight="1" />
 
-            </android.support.design.widget.TextInputLayout>
+                <Button
+                    style="@style/TaxPercentageButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="20%"
+                    android:id="@+id/button3"
+                    android:layout_weight="1" />
 
+                <Button
+                    style="@style/TaxPercentageButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="25%"
+                    android:id="@+id/button4"
+                    android:layout_weight="1" />
 
+                <Button
+                    style="@style/TaxPercentageButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="30%"
+                    android:id="@+id/button5"
+                    android:layout_weight="1" />
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -67,8 +117,67 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="3"
-                android:background="#cacbcf"></LinearLayout>
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#434343">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="TAX BRACKET"
+                        android:id="@+id/textView"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="300000 - 400000"
+                        android:id="@+id/textView2"
+                        android:paddingTop="20dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="23sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#353535">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="PERSONAL RELIEF"
+                        android:id="@+id/textView4"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="0"
+                        android:id="@+id/textView3"
+                        android:paddingTop="15dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
